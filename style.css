@@ -80,12 +80,8 @@ ul li.active a{
     max-width: 1200px;
     margin: auto;
 }
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
+
 .title h1{
     color: rgb(184, 163, 206);
     font-size: 70px;
@@ -103,12 +99,44 @@ ul li.active a{
 
 .titl ul li i{
  align-self: auto;
-    color: rgb(184, 0, 0);
+    color: rgb(14, 64, 94);
     font-size: 20px;
     float: center;
+}
+.titl1 ul li i{
+        align-self: auto;
+           color: rgb(14, 64, 94);
+           font-size: 20px;
+           float: center;
+       
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.title1 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+.title1 h1{
+    color: rgb(163, 129, 201);
+    font-size: 80px;
+    float: right;
+ font-family:  Brush Script MT, Brush Script Std, cursive;
 
 }
- 
+.title1 h3{
+    color: rgb(184, 163, 206);
+    font-size: 30px;
+    float: right;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+
 .mes{
     position: absolute;
     top: 50%;
