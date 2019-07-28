@@ -29,14 +29,6 @@ footer {
     background-position: center;
     }
 
-.all .film {
- 
-    position: absolute;  
-    top: 0; right: 0;  
-    bottom: 0; left: 0;
-    margin: auto; 
- 
-    }
 ul {
     float: right;
     list-style-type: none;
