@@ -29,6 +29,15 @@ footer {
     background-position: center;
     }
 
+    .all .film {
+        align-self: center;
+        }
+
+    .all .film h3{
+        color: rgb(193, 178, 209);
+     font-family:  Brush Script MT, Brush Script Std, cursive;
+        }
+
 ul {
     float: right;
     list-style-type: none;
