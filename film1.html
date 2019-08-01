@@ -1,52 +1,46 @@
 
+
   <!DOCTYPE html>
-  <html>
-      <head>
+<html>
+<head>
         <title>سينما</title>
         <meta charset="utf-8">
         <link rel="icon" href="https://img2.arabpng.com/20180215/gge/kisspng-popcorn-cinema-3d-film-cartoon-vector-popcorn-with-popcorn-5a86443c300b69.4935686315187487321968.jpg" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   
-    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-<!-- The video -->
-<video autoplay muted loop id="myVideo">
-    <source src="http://51.159.19.228/to3qrznlijvsy46b3wrwxpfqim7i4tsw7udskhxmnwhyifxh63i3iy72rkka/v.mp4" type="video/mp4">
-  </video>
-  
-  <!-- Optional: some overlay text to describe the video -->
-  <div class="content">
-    <h1>avengers endgame 2019</h1>
-    <p>مشاهدة فيلم اكشن و مغامرة و فانتازيا Avengers: Endgame 2019 مترجم بجودة BluRay كامل اون لاين
-        مشاهدة فيلم Avengers 4 2019 مترجم</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="myBtn" onclick="myFunction()">أيقاف</button>
-  </div>
+<h2>avengers endgame 2019</h2>
+<p><strong>ملحظه:</strong> أضغط للمشاهده بشاشه كامله</p>
+<button onclick="openFullscreen();">شاشه كامله</button>
+
+
+<video width="100%" controls id="myvideo">
+  <source src="http://51.159.19.228/to3qrznlijvsy46b3wrwxpfqim7i4tsw7udskhxmnwhyifxh63i3iy72rkka/v.mp4" type="video/mp4" type="video/mp4">
  
+</video>
 
 
-
-  
-  <script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "أيقاف";
-  } else {
-    video.pause();
-    btn.innerHTML = "متابعه";
+<script>
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
   }
 }
 </script>
 
 
-      
+
+</body>
 </html>
+
